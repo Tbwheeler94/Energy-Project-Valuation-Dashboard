@@ -21,55 +21,51 @@
   <!-- Import main style sheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-    <img src="energy_icon.svg" width="30" height="30" alt="">
-    </a>
-    <a class="navbar-brand" href="#">Energy Project Valuation Dashboard</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+      <img src="energy_icon.svg" width="30" height="30" style="margin-right: 10px">
+      <a class="navbar-brand mr-auto">Energy Project Valuation Dashboard</a>
+      <a class="nav-link" href="about.html" style="color: white;">About</a>
+      <a href="https://github.com/Tbwheeler94/Energy-Project-Valuation-Dashboard">
+        <img src="iconmonstr-github-5.svg" width="30" height="30">
+      </a>
   </nav>
 
   <!-- First Box -->
 
-  <div class = "container">
+  <div class = "container-fluid" style="margin: 20px">
       <div class = "row">
-          <div class = "ms-depth-8">
-              <h1>Hi I'm Text</h1>
+          <div class = "ms-depth-8 col-xl-2 col-md-3 col-sm-4" style="padding: 10px;">
+
+              <h4 style="text-align: center; margin-bottom: 15px">Select Inputs</h4>
+              <h6>Project Size</h6>
+              <hr style="margin-top: 0;">
+
+              <form class="form-inLine" action="index.html" method="post">
+
+                <label for="project-type" class="label">Project Type</label>
+                <select name="project-type">
+                  <option value="Solar">Solar</option>
+                  <option value="Wind">Wind</option>
+                </select>
+                <br>
+
+                <label for="installed-capacity">Installed Capacity:</label>
+                <input class="short-input" type="text" id="installed-capacity" placeholder="100" required> MW <br>
+
+                <label for="ac-dc-conversion">AC/DC Ratio:</label>
+                <input class="short-input" type="text" id="ac-dc-conversion" placeholder="0.9" required>
+
+
+              </form>
+
+              <br>
+              <h6 style="margin-bottom: 5px">Additional Revenue From Incentives</h6>
+              <hr style="margin-top: 0;">
           </div>
       </div>
   </div>

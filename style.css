@@ -1,3 +1,17 @@
 .background-nav {
   background-color: black;
 }
+
+.label {
+  margin-right: 10px;
+}
+
+.short-input{
+  width: 70px;
+}
+
+.ms-depth-8 {
+  border-radius: 5px;
+  background-color: white;
+  border-top: 8px solid black;
+}
